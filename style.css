@@ -1,0 +1,320 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #111;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+nav {
+  background-color: #121633;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 0;
+  font-size: 14px;
+  position: sticky; 
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #6ca0dc;
+}
+
+
+.home {
+  background-image: url(buildings.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  min-height: 400px; 
+  padding: 80px 20px 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home h1 {
+  font-weight: 700;
+  font-size: 2.5rem; 
+  margin-bottom: 10px;
+  
+}
+
+.home .work {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+
+.home .place {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.home .findmeonline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home .findmeonline a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  margin-left: 5px;
+}
+
+.home .findmeonline a:hover {
+  color: #6ca0dc;
+}
+
+
+.about {
+  max-width: 1200px;
+  margin: 80px auto 60px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+  line-height: 1.4;
+  color: #333;
+}
+
+.about-content {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-content img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover; 
+  border-radius: 50%; 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border: 4px solid #fff;
+  transform: rotate(-3deg);
+  transition: transform 0.3s ease;
+}
+
+
+
+.about-text {
+  max-width: 550px;
+  font-size: 1.05rem;
+  text-align: left;
+  line-height: 1.7;
+  color: #555;
+}
+
+.about-text strong {
+  color: #667eea; 
+  font-weight: 700;
+}
+
+
+.companies {
+  background-color: #83c4e6;
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 4px solid #7a55c0;
+  border-bottom: 4px solid #7a55c0;
+}
+
+.companies h3 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+.companies-logos {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.companies-logos img {
+  max-height: 50px;
+  max-width: 150px;
+
+}
+
+.companies-logos img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  
+}
+
+.contact-section {
+  background-color: #3a0ca3;
+  color: white;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.contact-section p {
+  font-size: 0.9rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+label {
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+textarea {
+  width: 100%;
+  height: 140px;
+  padding: 12px 15px;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+  resize: vertical;
+  font-family: inherit;
+}
+
+button {
+  background-color: #208cea;
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  width: 100%;
+  max-width: 200px;
+}
+
+button:hover {
+  background-color: #1769b5;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #121633;
+  color: #ccc;
+  font-size: 0.85rem;
+}
+
+
+@media (max-width: 700px) {
+  .home .place {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .home .findmeonline {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-content img {
+    transform: rotate(0); 
+  }
+  
+  nav {
+    gap: 15px;
+    font-size: 12px;
+  }
+}
